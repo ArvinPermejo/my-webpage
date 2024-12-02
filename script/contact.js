@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function(){
         </div>
 
         <div class="icon">
-            <p>You can conact me through the form available on the website.</p><br><br>
+            <p>You can contact me through the form available on the website.</p><br><br>
             <div class="icon-box">
                 <img src="images/icons/facebook.png" alt="icon 1">
                 <img src="images/icons/tiktok.png" alt="icon 2">

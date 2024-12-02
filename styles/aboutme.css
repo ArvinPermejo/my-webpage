@@ -10,7 +10,7 @@
 #about-me {
     width: 100%;
     border-radius: 10px;
-    display: none; /*flex*/
+    display: none; 
     flex-direction: column;
     align-items: center;
     background-color: #111;
@@ -57,7 +57,7 @@ table {
 }
 
 td, th {
-    padding: 1rem 3rem; /* Padding for content inside cells */
+    padding: 1rem 3rem;
 }
 
 td:first-child, td:nth-child(3) {
@@ -76,7 +76,7 @@ tr:last-child {
 /* Get in Touch */
 .get-in-touch {
     display: flex;
-    gap: 2rem; /* Add space between the image and form */
+    gap: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -84,7 +84,7 @@ tr:last-child {
 .get-in-touch img {
     width: 400px;
 }
-/* Tablet and Larger Screens */
+
 @media (min-width: 768px) {
     .about-me {
         flex-direction: row;
@@ -162,23 +162,21 @@ tr:last-child {
 
     table {
         font-size: 12px;
-        width: 100%; /* Make the table take up the full width */
-        border-collapse: collapse; /* Ensures borders are not doubled */
+        width: 100%; 
+        border-collapse: collapse; 
     }
 
     td {
         padding: 8px;
         text-align: left;
-        white-space: nowrap; /* Prevent text from wrapping */
+        white-space: nowrap; 
     }
 
-    /* Make the table horizontally scrollable if needed */
     .table-container {
         overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+        -webkit-overflow-scrolling: touch; 
     }
 
-    /* Hide third and fourth columns on mobile */
     table td:nth-child(3),
     table td:nth-child(4) {
         display: none;

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <table>
             <tr>
                 <td><strong>Email:</strong></td>
-                <td>arvint.pmrnjg@gmail.com</td>
+                <td>arvinf.permejo@gmail.com</td>
                 <td><strong>Nationality:</strong></td>
                 <td>Filipino</td>
             </tr>

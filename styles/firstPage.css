@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Ensure content is vertically stacked */
-    text-align: center; /* Center the text */
+    flex-direction: column; 
+    text-align: center;
 }
 
 #first-page p {
@@ -12,14 +12,16 @@
     font-weight: 600;
     text-align: left;
     line-height: 2.5rem;
-    margin-bottom: 1rem; /* Add space below the paragraph */
+    margin-bottom: 1rem; 
 }
 
 #first-page .dev-name {
     font-weight: 900;
     font-size: 5rem;
-    margin-bottom: 1rem; /* Add space below the dev-name */
+    margin-bottom: 1rem; 
+    color: rgb(233, 58, 160);
 }
+
 #dev-div {
     display: none;
 }
@@ -27,32 +29,31 @@
 margin-right: 2rem;
 }
 
-/* Responsive Design for Tablet (max-width: 768px) */
 @media (max-width: 768px) {
     #first-page p {
-        font-size: 1.8rem; /* Slightly smaller font size */
-        line-height: 2.2rem; /* Adjust line-height */
-        text-align: center; /* Center text on tablets */
+        font-size: 1.8rem; 
+        line-height: 2.2rem; 
+        text-align: center;
     }
 
     #first-page .dev-name {
-        font-size: 4rem; /* Reduce font size for dev name */
+        font-size: 4rem;
     }
 }
 
-/* Responsive Design for Mobile (max-width: 480px) */
+
 @media (max-width: 480px) {
     #first-page {
-        margin: 2rem 0; /* Reduce margin for mobile view */
-        padding: 0 20px; /* Add some padding on mobile */
+        margin: 2rem 0; 
+        padding: 0 20px; 
     }
 
     #first-page p {
-        font-size: 1.6rem; /* Smaller font size */
-        line-height: 2rem; /* Adjust line-height */
+        font-size: 1.6rem; 
+        line-height: 2rem; 
     }
 
     #first-page .dev-name {
-        font-size: 3.5rem; /* Further reduce font size */
+        font-size: 3.5rem; 
     }
 }
