@@ -1,0 +1,184 @@
+.second-h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(233, 58, 160);
+    font-size: 3rem; 
+    font-weight: 900;
+    margin: 1.5rem 0;
+}
+
+#about-me {
+    width: 100%;
+    border-radius: 10px;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    margin: 2rem 0;
+}
+
+.top-part {
+    display: flex;
+    gap: 2rem;
+}
+
+.top-part p {
+    text-align: justify;
+}
+
+.about-me {
+    border-radius: 20px;
+    color: inherit;
+    padding: 30px;
+    width: 100%; 
+}
+
+.second-img {
+    height: 150px;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.second-p {
+    font-size: 18px;
+}
+
+.table-part {
+    padding: 2rem 0;
+}
+
+table {
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+td, th {
+    padding: 1rem 3rem;
+}
+
+td:first-child, td:nth-child(3) {
+    font-weight: bold;
+    color: rgb(233, 58, 160);
+}
+
+tr {
+    border-bottom: 1px solid #333;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+/* Get in Touch */
+.get-in-touch {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch img {
+    width: 400px;
+}
+
+@media (min-width: 768px) {
+    .about-me {
+        flex-direction: row;
+        width: 1000px;
+        gap: 30px;
+    }
+
+    .second-img {
+        height: 200px;
+    }
+
+    .profile-table {
+        width: 80%; 
+    }
+}
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; 
+    }
+
+    .about-me {
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .second-img {
+        height: 150px; 
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 8px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+    .second-h1{
+        font-size: 24px;
+        margin-top: 5%;
+    }
+
+    .about-me {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .top-part {
+        flex-direction: column;
+    }
+
+    .top-part p {
+        font-weight: 200;
+    }
+
+    .top-part img {
+        height: 50%;
+    }
+
+    .second-img {
+        height: 120px;
+    }
+
+    .second-p {
+        padding: 6px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 12px;
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+
+    td {
+        padding: 8px;
+        text-align: left;
+        white-space: nowrap; 
+    }
+
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    table td:nth-child(3),
+    table td:nth-child(4) {
+        display: none;
+    }
+}
