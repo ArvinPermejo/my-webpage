@@ -1,0 +1,41 @@
+/* General Styles */
+.expriences {
+    display: none; /* Use 'block' to display when necessary */
+    text-align: center;
+    margin: 5rem 0;
+    width: 100%;
+}
+
+.expriences-box {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+}
+p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+p span {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.ds {
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .expriences-box {
+        gap: 2rem; /* Reduce the gap between items on smaller screens */
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .expriences-box {
+        gap: 1.5rem; /* Reduce the gap further on very small screens */
+    }
+}

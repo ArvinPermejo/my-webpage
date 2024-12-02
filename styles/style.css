@@ -1,0 +1,285 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust to space out logo and menu */
+    background-color: #111;
+    padding: 10px 20px;
+}
+
+.first {
+    font-size: 34px;
+    font-weight: 900;
+    color: rgb(233, 58, 160);
+}
+
+.first-p {
+    padding-bottom: 10px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu ul li a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px; /* Adjusted to a more readable font size */
+}
+
+.menu ul li a:hover {
+    background-color: rgb(233, 58, 160);
+    border-radius: 10px;
+    transition: 0.3s; /* Shorter transition for smoother hover effect */
+    padding: 10px;
+}
+
+.menu ul li .getintouch {
+    background-color: rgb(233, 58, 160);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menu ul li .getintouch:hover {
+    background-color: white;
+    border-radius: 10px;
+    transition: 0.3s; /* Shorter transition */
+    color: black;
+    padding: 15px;
+}
+
+.logo img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.first-img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media (max-width: 768px) {
+    .header {
+        align-items: center; /* Center items vertically */
+        justify-content: center;
+    }
+
+    .first {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .menu ul {
+        gap: 1rem;
+        justify-content: center;
+        align-items: center; /* Center align menu items */
+    }
+
+    .menu ul li a {
+        font-size: 14px; 
+    }
+
+    .menu ul li .getintouch {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .first-img {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px;
+    }
+
+    .img {
+        margin-top: 5%; /* Adjust margin for mobile */
+        width: 80%; /* Make image container take up more space */
+        padding: 30px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .first {
+        font-size: 24px; /* Even smaller font size */
+    }
+
+    .menu ul li a {
+        font-size: 10px; /* Smaller font size for even smaller screens */
+    }
+
+    .menu ul li .getintouch {
+        font-size: 12px; /* Smaller button text */
+        padding: 8px; /* Reduce padding for small screens */
+    }
+
+    .first-img {
+        width: 60px; /* Reduce image size further */
+        height: 60px;
+    }
+
+    .img {
+        width: 90%; /* Full width container */
+        padding: 20px; /* Smaller padding for smaller screens */
+    }
+}
+
+
+/* Portfolio */
+.third-h1 {
+    margin-top: 30px;
+    color: rgb(233, 58, 160);
+    text-align: center;
+    font-size: 36px;
+}
+
+.experience {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    display: flex;
+    padding: 10px; 
+    gap: 20px;
+}
+
+.q, .w, .e, .r {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: 1px solid rgb(233, 58, 160);
+    background-color: #111;
+    text-align: center;
+    border-radius: 10px; 
+    padding: 15px;
+    width: 300px;
+}
+
+.q button, .w button, .e button, .r button {
+    background-color: rgb(233, 58, 160);
+    border-radius: 5px;
+    cursor: pointer;
+    color: #111;
+    padding: 8px;
+}
+
+.q button:hover,
+.w button:hover,
+.e button:hover,
+.r button:hover {
+    background-color: black;
+    transition: 0.3s;
+    color: white;
+}
+
+
+.e, .r {
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .q, .w, .e, .r {
+        width: 45%; 
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    .experience {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .q, .w, .e, .r {
+        width: 90%; 
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .experience {
+        gap: 10px;
+    }
+
+    .q button, .w button, .e button, .r button {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+/* Contact */
+
+.last-h1 {
+    margin-top: 15%;
+    color: rgb(233, 58, 160);
+    text-align: center;
+    font-size: 36px; 
+    margin-bottom: 20px; 
+}
+
+.icon {
+    background-color: #111;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%; 
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.icon .icon-box img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+.icon-box img:hover {
+    transform: scale(1.4) rotate(360deg);
+}
+
+@media (max-width: 768px) {
+    .last-h1 {
+        font-size: 28px;
+    }
+    
+    .icon {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .last-h1 {
+        font-size: 24px;
+    }
+    
+    .icon {
+        width: 90%;
+        padding: 15px;
+    }
+}

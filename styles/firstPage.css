@@ -1,0 +1,58 @@
+#first-page {
+    margin: 5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure content is vertically stacked */
+    text-align: center; /* Center the text */
+}
+
+#first-page p {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 2.5rem;
+    margin-bottom: 1rem; /* Add space below the paragraph */
+}
+
+#first-page .dev-name {
+    font-weight: 900;
+    font-size: 5rem;
+    margin-bottom: 1rem; /* Add space below the dev-name */
+}
+#dev-div {
+    display: none;
+}
+#dev-div .content-img .first-img{
+margin-right: 2rem;
+}
+
+/* Responsive Design for Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    #first-page p {
+        font-size: 1.8rem; /* Slightly smaller font size */
+        line-height: 2.2rem; /* Adjust line-height */
+        text-align: center; /* Center text on tablets */
+    }
+
+    #first-page .dev-name {
+        font-size: 4rem; /* Reduce font size for dev name */
+    }
+}
+
+/* Responsive Design for Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    #first-page {
+        margin: 2rem 0; /* Reduce margin for mobile view */
+        padding: 0 20px; /* Add some padding on mobile */
+    }
+
+    #first-page p {
+        font-size: 1.6rem; /* Smaller font size */
+        line-height: 2rem; /* Adjust line-height */
+    }
+
+    #first-page .dev-name {
+        font-size: 3.5rem; /* Further reduce font size */
+    }
+}
